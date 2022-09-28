@@ -1,0 +1,21 @@
+{
+  "name": "cads",
+  "version": "1.0.0",
+  "description": "A work in progress open source credit management service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@sean:artemis-rd/cads.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6"
+  }
+}
