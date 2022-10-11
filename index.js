@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/get-started', (req, res) => {
-	res.render('register', { title: 'Account Creation'})
+	res.render('login', { title: 'Account Creation'})
 })
 
 app.listen(port, () => {
