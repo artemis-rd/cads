@@ -1,6 +1,36 @@
 <section>
     {{!-- Registration Page --}}
-    <form>
-        
-    </form>
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <!--LOGIN FORM-->
+                    <h2>LOGIN</h2>
+                    <form action="dashboard.handlebars">
+                        <input type="email" class="input-box" placeholder="Enter your Email address" required>
+                        <input type="password" class="input-box" placeholder="password" required>
+                        <button type="submit" class="submit-btn" onclick="openUserHome()">submit</button><br>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openRegister()">I'm New Here!</button>
+                    <a href="">Forgot password?</a>
+                </div>
+
+                <div class="card-back">
+                    <!--REGISTER FORM-->
+                    <h2>REGISTER</h2>
+                    <form action="dashboard.handlebars">
+                        <input type="text" class="input-box" placeholder="Enter  Name" required><br>
+                        <input type="email" class="input-box" placeholder="Enter your Email address" required><br>
+                        <label for="password">Input your password here</label><br>
+                        <input type="password" class="input-box" placeholder="password" required><br>
+                        <button type="submit" class="submit-btn">submit</button><br>
+                        <input type="checkbox"></span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openLogin()">I've an account</button>
+                    <a href="">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
