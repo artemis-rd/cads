@@ -54,9 +54,6 @@ body {
     display: inline-block;
     text-decoration: none ;
 }
-
-
-.frame{
 #menu{
     background: var(--clr-primary);
     width: 300px;
@@ -268,7 +265,14 @@ body {
 table thead tr{
     margin-left: auto;
 } 
-
+/* Login and registration CSS */
+.frame{
+    width: 100%;
+    height: 100vh;
+    background: var(--clr-muted-bg);
+    display: flex;
+    position: relative;
+}
 
 .container{
     width: 100%;
@@ -338,10 +342,11 @@ a{
 }
  a:hover{
     color: rgb(111, 0, 255);
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
-.input-box::placeholder{
-    color: var(--clr-placeholder-color);
+input::placeholder{
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--clr-dark);
+    
+  
 }
-}
-
