@@ -10,20 +10,23 @@ const sequelize = new Sequelize("postgresql://more:iam2001@@localhost:5432/cads"
 const user = sequelize.define
 ("user",{
 	name:DataTypes.STRING,
-	gender:DataTypes.STRING,
-	Id:{primaryKey:true,type:DataTypes.INTEGER},
-	balance:DataTypes.INTEGER
+	password:DataTypes.STRING
 })
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.use(express.static('public'))
 
+app.use(express.urlencoded({ extended: true }))
 app.get('/', (req, res) => {
 	res.render('index', { title: 'CADS | A Digital Lending Solution'});
 });
 
-app.get('/get-started', (req, res) => {
-	res.render('register', { title: 'Account Creation'})
+app.post('/register',async(req,res) => {
+	await user.create({
+		name:req.body.name,
+		password:req.body.password
+	})
+	res.redirect("/login")
 })
 
 app.get('/login', (req, res) =>{
@@ -31,19 +34,14 @@ app.get('/login', (req, res) =>{
 }) 
 
 app.get('/register', async(req, res) =>{
-	await user.create({
-		name:"Forceout",
-		gender:"Male",
-		Id:32416789,
-		balance:2000
-	})
-	res.render('register', {title: 'Login'})
+	
+	res.render('register', {title: 'register'})
 })
 
 app.listen(port, async() => {
 	try{
 		await sequelize.authenticate()
-		await user.sync({force:true})
+		await user.sync({force:false})
 		console.log(`Server started successfuly on http://localhost:${port}`);
 	}
 	catch(err){
