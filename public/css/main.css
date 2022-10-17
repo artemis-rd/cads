@@ -291,13 +291,13 @@ table thead tr{
     line-height: 22px;
 }
 .paragraph{
-   padding-top: 180px;
-   padding-left: 150px; 
+   padding-top: 30px;
+   padding-left: 30px; 
 }
 
 .form{
-    margin-top: 35px;
-    margin-left: 150px;
+    margin-top: 28px;
+    margin-left: 30px;
     box-sizing: border-box; 
 }
 .form div{
@@ -332,6 +332,7 @@ button{
     cursor: pointer;
     transition: all 0.2s;
     margin:1.18em 2.7rem 0 3px;
+    font-family: 'Josefin Sans', sans-serif;
   
 }
 button:hover{
@@ -342,11 +343,10 @@ a{
 }
  a:hover{
     color: rgb(111, 0, 255);
-    /* text-decoration: underline; */
 }
 input::placeholder{
     font-family: 'Josefin Sans', sans-serif;
-    color: var(--clr-dark);
-    
-  
+}
+.input-box::placeholder{
+    color: var(--clr-placeholder-color);
 }
