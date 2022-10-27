@@ -10,7 +10,7 @@ const sequelize = new Sequelize("postgresql://more:iam2001@@localhost:5432/cads"
 const user = sequelize.define
 ("user",{
 	name:DataTypes.STRING,
-	password:DataTypes.STRING
+	password:DataTypes.STRING,
 })
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
