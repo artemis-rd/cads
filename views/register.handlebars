@@ -7,17 +7,25 @@
         </div>
         <div class="form">
             <form action="/register" method="post">
-                <div class="name">
+                <div class="form-control ">
                     <label for="name">Enter your full name</label>
-                    <input type="text" placeholder="Enter your Full Name here" name="name" required>
+                    <input id="name"type="text" placeholder="Enter your Full Name here" name="name" required>
+                    <small></small>
                 </div>
-                <div class="password">
+                <div class="form-control">
+                    <label for="email">Enter your Email here</label>
+                    <input id="email"type="email" placeholder="Enter your Email address here" name="email" required>
+                    <small></small>
+                </div>
+                <div class="form-control">
                     <label for="password">Enter your login password</label>
-                    <input type="password" placeholder="Enter your password" name="password" required>
+                    <input id="pwd" type="password" placeholder="Enter your password" name="password" required>
+                    <small></small>
                 </div>
-                <div class="password">
-                    <label for="name">Confirm password</label>
-                    <input type="password" placeholder="Confirm password" name="confirmPassword" required>
+                <div class="form-control">
+                    <label for="password">Confirm password</label>
+                    <input id="conpwd" type="password" placeholder="Confirm password" name="confirmPassword" required>
+                    <small>Error message</small>
                 </div>
                  <button type="submit">Create your account</button>
                     <a href="/login">I already have an account</a>

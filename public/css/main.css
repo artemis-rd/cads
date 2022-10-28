@@ -6,6 +6,7 @@
     --clr-light: #edf3f0;
     --clr-border-color:#DCDCDC;
     --clr-placeholder-color:#C4C4C4;
+    --clr-inputbackground-color:#F7F7F7;
 }
 * {
     margin: 0;
@@ -80,27 +81,47 @@ body {
     margin-left: 30px;
     box-sizing: border-box; 
 }
+.form-control{
+    margin-top: 18px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
 .form div{
     display: block;
     padding: 5px;
-}
+} 
 .input-box{
     width: 100%;
     background-color: var(--clr-muted-bg);
     border: var(--clr-border-color);
-}
+} 
 .form div label{
     display: block;
-    padding: 10px 10px 10px 0;
+    padding: 10px 10px 10px 0; 
 }
-.form div input{
+.form-control.success input{
+    border: solid rgb(35, 209, 12);
+}
+.form-control.error input{
+    border: solid rgb(173, 27, 27);
+}
+.form-control input{
     display: block;
     width: 80%;
     height: 47px;
-    border-radius: 3px;
-    background-color: var(--clr-placeholder-color);
+    border-radius: 4px;
+    background-color: var(--clr-inputbackground-color);
     padding: 10px 10px;
-    border: 1px solid var(--clr-secondary);
+    border: 1px solid var(--clr-border-color);
+}
+.form-control small{
+    position: absolute;
+    margin: 3px;
+    visibility: hidden;
 }
 button{
     background-color: var(--clr-primary);
@@ -108,13 +129,15 @@ button{
     padding: 8px 12px;
     color: var(--clr-light);
     cursor: pointer;
+    outline: none;
+    background: #5F4BB6;
     transition: all 0.2s;
     margin:1.18em 2.7rem 0 3px;
     font-family: 'Josefin Sans', sans-serif;
   
 }
 button:hover{
-    background-color: var(--clr-dark);
+    background-color: rgb(111, 0, 255);
 }
 a{
     text-decoration: none;
