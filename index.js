@@ -10,7 +10,8 @@ const sequelize = new Sequelize("postgresql://more:iam2001@@localhost:5432/cads"
 const user = sequelize.define
 ("user",{
 	name:DataTypes.STRING,
-	password:DataTypes.STRING
+	email:DataTypes.STRING,
+	password:DataTypes.STRING,
 })
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
@@ -24,9 +25,15 @@ app.get('/', (req, res) => {
 app.post('/register',async(req,res) => {
 	await user.create({
 		name:req.body.name,
-		password:req.body.password
+		email:req.body.email,
+		password:req.body.password,
 	})
 	res.redirect("/login")
+})
+
+app.post('/login',async(req,res) => {
+
+	res.redirect("/dashboard")
 })
 
 app.get('/login', (req, res) =>{
