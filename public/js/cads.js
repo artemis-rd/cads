@@ -1,5 +1,6 @@
 console.log('%cWelcome to CADS', 'font-size: 2em;color: #5f4bb6')
 
+
 // let userName = document.getElementById("name");
 // let Email = document.getElementById("email");
 // let password = document.getElementById("pwd");
@@ -68,3 +69,4 @@ console.log('%cWelcome to CADS', 'font-size: 2em;color: #5f4bb6')
 // function isValidEmail(email) {
 //     return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
 // }
+
