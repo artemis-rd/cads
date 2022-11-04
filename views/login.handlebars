@@ -3,18 +3,33 @@
     <div class="box-1">
         <div class="paragraph">
             <h2 class="big-text">Welcome Back!</h2>
+
             <p class="small-text">To have access to the best loan in the whole state. <br> We first need to get some
                 information from You</p>
+
+            <p class="small-text">To have access to the best loan in the whole state,<br> we first we need to get some
+                information from You<br>Fill in your details here to Login</p>
+
         </div>
         <div class="form">
-            <form action="/register" method="post">
-                <div class="name">
+            <form action="/dashboard" method="get">
+                 <div class="form-control">
                     <label for="name">Enter your name</label>
+
                     <input type="text" placeholder="Enter your Name here" name="name" required>
+
+                    <input type="input-box" placeholder="Enter your Name here" name="name" required>
+                    <small></small>
+
                 </div>
-                <div class="password">
+                 <div class="form-control">
                     <label for="password">Enter your login password</label>
+
                     <input type="text" placeholder="Enter your password" name="password" required>
+
+                    <input type="input-box" placeholder="Enter your password" name="password" required>
+                    <small></small>
+
                 </div>
                 <div class="myButton">
                 <button type="submit">Login</button>
