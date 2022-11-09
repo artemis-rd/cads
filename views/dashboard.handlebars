@@ -1,0 +1,135 @@
+<section id="menu">
+    <header>
+        <h2>CADS</h2>
+    </header>
+    <div class="items">
+        <div class="item"><a href=""><i class="fa fa-home"></i>Dashboard</a>
+        </div>
+        <div class="item"><a class="sub-btn"><i class="fa fa-credit-card"></i>Loans
+                    <i class="fa fa-angle-right dropdown"></i>
+                </a>
+                <div class="sub-menu">
+                    <a href="" class="sub-item">Check Loans</a>
+                    <a href="" class="sub-item">Add Loan</a>
+                    <a href="" class="sub-item">Delete Loan</a>
+                </div>
+        </div>
+        <div class="item"><a href="#"><i class="fa fa-usd"></i>Borrowers</a></div>
+
+        <div class="item"><a href="#"><i class="fa fa-money"></i>Payment</a>
+        </div>
+
+        <div class="item"><a class="sub-btn"><i class="fa fa-users"></i>Staff
+                <i class="fa fa-angle-right dropdown"></i>
+            </a>
+                <div class="sub-menu">
+                    <a href="" class="sub-item">Add Staff</a>
+                    <a href="" class="sub-item">Approve Staff</a>
+                    <a href="" class="sub-item">Delete Staff</a>
+                </div>
+        </div>
+        <div class="item"><a href="#"><i class="fa fa-code-fork"></i>Reports</a></div>
+        <div class="item"><a href="#"><i class="fa fa-user"></i>Log out</a>
+    </div>
+</section>
+<!--Main Body -->
+<section id="interface">
+    <div class="navigation">
+        <div class="n1">
+            <i id="menu-btn" class="fa fa-bars"></i>
+            <div class="search">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="profile">
+            <i class="fa fa-envelope"></i>
+            <i class="fa fa-bell"></i>
+            <img src="../image/avatar.webp" alt="">
+        </div>
+    </div>
+
+    <h3 class="name">
+        Dashboard
+    </h3>
+    <div class="boxes">
+        <div class="mod-box" id="box1">
+            <div>
+
+                <h3> <i class="fa fa-usd"></i>Borrowers</h3><br>
+                <a href=""><span>View Borrowers List</span></a>
+            </div>
+        </div>
+        <div class="mod-box" id="box2">
+            <div>
+
+                <h3><i class="fa fa-credit-card"></i>Loans Released</h3><br>
+                <a href=""><span>Total Loans Released</span></a>
+            </div>
+        </div>
+        <div class="mod-box" id="box3">
+            <div>
+                <h3><i class="fa fa-money"></i>Total Collection</h3><br>
+                <a href=""><span>Loans Collected</span></a>
+            </div>
+        </div>
+        
+        <div class="mod-box" id="box4">
+            <div>
+                <h3><i class="fa fa-users"></i>All Staff</h3><br>
+                <a href=""><span>View Staff</span></a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Table -->
+    <div class="banner">
+        <div class="header">
+            <h3>Payment List</h3>
+            <button type="button">Print</button>
+        </div>
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Id NO.</td>
+                    <td>Loan Date</td>
+                    <td>Payee</td>
+                    <td>Loan Amt</td>
+                    <td>Loan Paid</td>
+                    <td>Int Per(%)</td>
+                    <td>Balance</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>36835003</td>
+                    <td>25/09/2022</td>
+                    <td>Papa Dennis</td>
+                    <td>3,500</td>
+                    <td>2,500</td>
+                    <td>5</td>
+                    <td>1000</td>
+                    <td>Approved</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>36835003</td>
+                    <td>25/09/2022</td>
+                    <td>Papa Dennis</td>
+                    <td>3,500</td>
+                    <td>2,000</td>
+                    <td>6</td>
+                    <td>1,500</td>
+                    <td>Pending</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+<a href="/dashboard"></a>
+</section>

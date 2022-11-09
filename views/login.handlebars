@@ -1,26 +1,30 @@
-<section>
-    <!--getting started-->
-    <div class="Container">
+<!--Login-->
+<div class="frame">
+    <div class="box-1">
+      
         <div class="paragraph">
-            <h2>You are ONE step away from your first loan</h2>
-            <p>To have access to the best loan in the whole stae, we<br>first we need to get some information from you
-            </p>
+            <h2 class="big-text">Welcome Back!</h2>
+
+            <p class="small-text">To have access to the best loan in the whole state. <br> We first need to get some
+                information from You</p>
+
         </div>
-        <div class="card-1">
-            <form action="">
-                <div class="form">
-                    <label for="name">Enter your Name</label>
-                    <input type="input-box" placeholder="Enter your Name here" required>
+        <div class="form">
+            <form action="/login" method="post">
+                 <div class="details">
+                    <label for="name">Email address</label>
+                    <input type="text" placeholder="Username or Email Address" name="email" required>
+
                 </div>
-                <div class="password">
-                    <label for="password">Enter your Login password</label>
-                    <input type="input-box" placeholder="Enter your password" required>
+                 <div class="details">
+                    <label for="password">Enter your login password</label>
+                    <input type="text" placeholder="Enter your password" name="password" required>
                 </div>
-                <div class="button">
-                    <button type="submit">Submit</button>
-                    <span><a href="/register">I don't have an account</a></span>
-                </div>
+                <div class="myButton">
+                <button type="submit">Login</button>
+                <a href="/register">I don't have an account</a>
+            </div>
             </form>
         </div>
     </div>
-</section>
+</div>
