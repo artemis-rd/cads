@@ -3,50 +3,38 @@
     <div class="box-1">
         <div class="paragraph">
             <h2 class="big-text">You are ONE step away from your first loan</h2>
-            <p class="small-text">To have access to the best loan in the whole state,<br> we first we need to get some information from You</p>
+            <p class="small-text">To have access to the best loan in the whole state,<br> we first we need to get some
+                information from You</p>
         </div>
         <div class="form">
             <form action="/register" method="post">
-                <div class="form-control ">
+                <div class="details">
                     <label for="name">Enter your full name</label>
-                    <input id="name"type="text" placeholder="Enter your Full Name here" name="name" required>
-                    <small></small>
+                    <input id="name" type="text" placeholder="Enter your Full Name here" name="fullname">
                 </div>
 
-                  <div class="email">
+                <div class="details">
                     <label for="email">Enter your Email</label>
-                    <input type="email" placeholder="email@example.com" name="email" required>
+                    <input type="email" placeholder="email@example.com" name="email">
                 </div>
-                  <div class="id">
+                <div class="details">
                     <label for="id">Enter ID Number</label>
-                    <input type="number" placeholder="Enter a Valid ID. No" name="id" required>
+                    <input type="number" placeholder="Enter a Valid ID. No" name="id">
                 </div>
-                  <div class="password">
-
-                <div class="form-control">
-                    <label for="email">Enter your Email here</label>
-                    <input id="email"type="email" placeholder="Enter your Email address here" name="email" required>
-                    <small></small>
+                <div class="details">
+                    <label for="password">Enter login password</label>
+                    <input type="password" placeholder="Enter your password" name="password">
                 </div>
-                <div class="form-control">
-
-                    <label for="password">Enter your login password</label>
-                    <input id="pwd" type="password" placeholder="Enter your password" name="password" required>
-                    <small></small>
-                </div>
-                <div class="form-control">
+                <div class="details">
                     <label for="password">Confirm password</label>
-                    <input id="conpwd" type="password" placeholder="Confirm password" name="confirmPassword" required>
-                    <small>Error message</small>
+                    <input type="password" placeholder="Confirm Login password" name="confPassword">
                 </div>
                 <div class="myButton">
-                 <button type="submit">Create your account</button>
-                    <a href="/login">I already have an account</a>
+                    <button type="submit">Create</button>
+                    <a href="/login">I have an account</a>
                 </div>
             </form>
-            
+
         </div>
     </div>
-    <div class="box-2"></div>
 </div>
-
